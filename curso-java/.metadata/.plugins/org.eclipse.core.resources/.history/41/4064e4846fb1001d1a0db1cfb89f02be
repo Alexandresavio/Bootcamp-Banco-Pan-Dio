@@ -1,0 +1,37 @@
+package fundamentos;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class EstruturaFor {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * Fazer um programa que lê um valor inteiro N 
+		 * e depois N números inteiros.
+		 * Ao final, mostra a soma dos N números lidos
+		 * 
+		 */
+		
+		Locale.setDefault(Locale.US);
+		Scanner leia = new Scanner(System.in);
+		
+		System.out.println("Informe um número:");
+		int numero = leia.nextInt();
+		
+		for(int i = 0; i < numero; i++) {
+			System.out.println("Informe um número:");
+			numero = leia.nextInt();
+		}
+		
+		leia.close();
+
+	}
+
+}
+
+
+
+
+

@@ -1,0 +1,47 @@
+package estrutura_vetor_exercicio;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Exe001 {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * 1) Faça um programa que leia N números reais e armazene-os em um vetor.
+		 * Em seguida, mostrar na tela o maior número do vetor (supor não haver empates).
+		 * Mostrar também a posição do maior elemento.
+		 * 
+		 */
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Deseja informar quantos valores?");
+		int valor = sc.nextInt();
+		
+		//instanciar objeto vetor
+		double[]vet = new double [valor];
+		
+		//entrada de dados
+		for(int i = 0; i < valor; i++) {
+			System.out.println("Informe o valor da posição "+i+" do vetor");
+			vet[i] = sc.nextDouble();
+		}
+		
+		sc.close();
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+

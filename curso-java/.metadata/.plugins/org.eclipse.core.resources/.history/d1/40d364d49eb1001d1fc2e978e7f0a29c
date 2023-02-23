@@ -1,0 +1,49 @@
+package estrutura_repeticao_for;
+
+import java.util.Scanner;
+
+public class Uri1074 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int valor = 0;
+		
+		System.out.println("Informe quantos numeros deseja verificar:");
+		int numero = sc.nextInt();
+		
+		for(int i = 1; i <= numero; i++) {
+			System.out.println("Digite o "+i+"º valor:");
+			valor = sc.nextInt();
+			
+			if((valor %2 ==0)&&(valor > 0)) {
+				System.out.println("Par positivo");
+			}
+			else if(((valor %2 ==0)&&(valor < 0))) {
+				System.out.println("Par negativo");
+				
+			}else if(((valor %2 !=0)&&(valor > 0))) {
+				System.out.println("Impar positivo");
+			}else if(((valor %2 !=0)&&(valor < 0))) {
+				System.out.println("Impar Negaivo");
+			}else {
+				System.out.println("Nulo");
+			}
+		}
+				
+		sc.close();
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+

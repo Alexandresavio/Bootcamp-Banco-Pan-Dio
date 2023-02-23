@@ -1,0 +1,41 @@
+package fundamentos;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class EstruturaVetor {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * FUP para ler um número inteiro positivo N, depois ler N números quaisquer 
+		 * e armazena-los em um vetor. Em seguida, mostrar na tela todos elementos 
+		 * do vetor.
+		 * 
+		 */
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Informe um número:");
+		int n = sc.nextInt();
+		
+		//criando o objeto vetor (instanciação)
+		double [] vetor = new double[n];
+		
+		//entrada de dados
+		for(int i = 0; i < n; i++) {
+			System.out.println("Informe o número da posição "+i+":");
+			vetor[i] = sc.nextDouble();
+		}
+		
+		//saida de dados
+		for(int i = 0; i < n; i++) {
+			System.out.printf("%.2f\n",vetor[i]);			
+		}
+				
+		
+		
+		sc.close();
+	}
+
+}

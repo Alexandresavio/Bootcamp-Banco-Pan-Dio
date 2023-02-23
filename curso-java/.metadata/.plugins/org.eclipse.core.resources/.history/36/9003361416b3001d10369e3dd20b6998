@@ -1,0 +1,42 @@
+package estrutura_vetor_exercicio;
+
+import java.util.Scanner;
+
+public class Exe006 {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * 6) Fazer um programa para ler um conjunto de nomes 
+		 * de pessoas e suas respectivas idades. Depois, mostrar
+		 * na tela o nome da pessoa mais velha.
+		 * 
+		 */
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Deseja informar os dados de quanas pessoas?");
+		int n = sc.nextInt();
+		
+		String[]vetNome = new String[n];
+		for(int i = 0; i < n; i++) {
+			System.out.println("Digite o nome da "+i+"ª pessoa:");
+			vetNome[i] = sc.next();
+		}
+		
+		int[] vetIdade = new int[n];
+		for(int i = 0; i < n; i++) {
+			System.out.println("Digite a idade da "+i+"ª pessoa:");
+			vetIdade[i] = sc.nextInt();
+		}
+		
+		
+		sc.close();
+
+	}
+
+}
+
+
+
+

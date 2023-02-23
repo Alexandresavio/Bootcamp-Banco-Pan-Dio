@@ -1,0 +1,50 @@
+package fundamentos;
+
+import java.util.Scanner;
+
+public class ExercicioPropostoVetor02 {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * Faça um programa que leia N números reais e armazene-os em um vetor.
+		 * Em seguida: 
+		 * - Imprimir todos os elementos do vetor
+		 * - Mostrar na tela a soma e a média dos elementos do vetor
+		 * 
+		 */
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Deseja informar quantos números?");
+		int numero = sc.nextInt();
+	    
+		double soma = 0;
+		double media = 0;
+		int cont = 0;
+		
+		//instanciar o objeto vetor
+		double[] vet = new double[numero];
+		
+		//entrada de dados
+		for(int i = 0; i < numero; i++) {
+			vet[i] = sc.nextDouble();
+			soma += vet[i];
+			cont++;
+		}
+		
+		//saida de dados
+		for(int i = 0; i < numero; i++) {
+			System.out.println(vet[i]);			
+		}
+		media = soma/cont;
+		System.out.println(media);
+		
+		
+		
+		
+		sc.close();
+
+	}
+
+}
